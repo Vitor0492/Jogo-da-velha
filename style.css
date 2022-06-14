@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&family=Varela+Round&display=swap");
+
+body {
+  text-align: center;
+  background: linear-gradient(to left, #21072a, #4e0726);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Varela Round", sans-serif;
+  color: #fa1478;
+  font-size: 50px;
+  padding: 70px;
+  border-bottom: 3px solid #fa1478;
+  margin: 50px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.o {
+  position: relative;
+}
+
+.o::after {
+  position: absolute;
+  content: "\2B55";
+  font-size: 50px;
+  line-height: 100px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.x {
+  position: relative;
+}
+
+.x::after {
+  position: absolute;
+  content: "\274C";
+  font-size: 50px;
+  line-height: 100px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.n0 {
+  border: 3px solid #fa1478;
+  border-left: none;
+  border-top: none;
+}
+.n1 {
+  border: 3px solid #fa1478;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+.n2 {
+  border: 3px solid #fa1478;
+  border-top: none;
+  border-right: 0;
+}
+.n3 {
+  border: 3px solid #fa1478;
+  border-left: none;
+  border-top: none;
+  border-bottom: 0;
+}
+
+.n5 {
+  border: 3px solid #fa1478;
+  border-top: none;
+  border-right: 0;
+  border-bottom: 0;
+}
+.n6 {
+  border: 3px solid #fa1478;
+  border-left: none;
+  border-bottom: none;
+}
+.n7 {
+  border: 3px solid #fa1478;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+.n8 {
+  border: 3px solid #fa1478;
+  border-right: none;
+  border-bottom: 0;
+}
+
+h2 {
+  color: #fa1478;
+}
+
+button {
+  background: #fa1478;
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: inherit;
+  transition: 0.3s;
+}
+button:hover {
+  padding: 30px;
+  transition: 0.3s;
+  background: #770637;
+}
+@media screen and (max-width: 465px) {
+  h1 {
+    font-size: 30px;
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .square {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+  }
+  h1 {
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .o::after {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .x::after {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 181px) {
+  .square {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .o::after {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .x::after {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

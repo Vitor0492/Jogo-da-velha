@@ -47,7 +47,17 @@ const EndWin = () => {
       return true;
     }
   }
-  return false;
+  return velha();
 };
 
 const refresh = () => document.location.reload();
+
+const velha = () => {
+ let posicoes = board;
+   
+  for (let i = 0; i < posicoes.length; i++) {
+    if (posicoes[i] === "") {
+      return false;
+    }
+}
+return acabou();};

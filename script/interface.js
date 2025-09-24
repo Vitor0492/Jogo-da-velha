@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const titulo = document.getElementById("title");
+
 const handleClick = (event) => {
   const square = event.target;
   const position = square.id;
@@ -14,8 +16,8 @@ const handleClick = (event) => {
 
     setTimeout(() => {
   
-      alert(" Fim de jogo - Vencedor Jogador " +playerTime)
-
+      titulo.innerHTML = `FIM! Vencedor: Jogador ${playerTime}`;
+     
     }, 20)
   };
   updateSquare(position);
@@ -24,4 +26,9 @@ const updateSquare = (position) => {
 const square = document.getElementById(position.toString())
 const symbol = board[position];
 square.innerHTML = `<div class='${symbol}'></div>`;
+}
+
+const acabou = () => { 
+  let title = document.getElementById("title");
+  title.innerHTML = "Deu velha!";
 }

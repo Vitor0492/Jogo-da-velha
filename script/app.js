@@ -11,7 +11,7 @@ function handleMove(position) {
   if (board[position] == "") {
     board[position] = symbols[playerTime];
 
-    gameOver = EndWin();
+    gameOver = acabarJogo();
 
     if (gameOver == false) {
       playerTime = playerTime == 0 ? 1 : 0;
@@ -20,8 +20,8 @@ function handleMove(position) {
   return gameOver;
 }
 
-const EndWin = () => {
-  let winStates = [
+const acabarJogo = () => {
+  let condicaoDeVitoria = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -32,8 +32,8 @@ const EndWin = () => {
     [2, 4, 6],
   ];
 
-  for (let i = 0; i < winStates.length; i++) {
-    const seq = winStates[i];
+  for (let i = 0; i < condicaoDeVitoria.length; i++) {
+    const seq = condicaoDeVitoria[i];
 
     const pos1 = seq[0];
     const pos2 = seq[1];
@@ -61,3 +61,7 @@ const velha = () => {
     }
 }
 return acabou();};
+
+function animacaoDeVitoria () {
+  
+}

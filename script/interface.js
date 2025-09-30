@@ -12,7 +12,7 @@ const handleClick = (event) => {
   const square = event.target;
   const position = square.id;
 
-  if(handleMove(position)){
+  if(jogada(position)){
 
     setTimeout(() => {
   
@@ -28,7 +28,7 @@ const symbol = board[position];
 square.innerHTML = `<div class='${symbol}'></div>`;
 }
 
-const acabou = () => { 
+const acabou = () => { ;
   let title = document.getElementById("title");
   title.innerHTML = "Deu velha!";
 }

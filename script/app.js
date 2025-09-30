@@ -3,7 +3,7 @@ let playerTime = 0;
 const symbols = ["o", "x"];
 let gameOver = false;
 
-function handleMove(position) {
+function jogada(position) {
   if (gameOver) {
     return;
   }
